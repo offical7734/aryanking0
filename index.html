@@ -342,7 +342,7 @@ h1 span {
 
 <!-- Meta Pixel Event Tracking -->
 <script>
-(function () {
+document.addEventListener('DOMContentLoaded', function () {
 
     const joinButton = document.getElementById('telegramJoin');
 
@@ -354,15 +354,13 @@ h1 span {
 
             fbq('track', 'Lead');
 
-            fbq('track', 'Subscribe');
-
             fbq('trackCustom', 'JoinTelegramClick');
 
         }
 
     });
 
-})();
+});
 </script>
 
 </body>
