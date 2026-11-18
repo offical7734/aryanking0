@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,29 @@
 
 <title>ARYAN BOSS — Official Telegram Community</title>
 
+<meta name="description" content="Join ARYAN BOSS official Telegram community. Get daily exclusive content and updates for free.">
 
+<meta name="theme-color" content="#100819">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '29144009308625924');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=29144009308625924&ev=PageView&noscript=1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
 
 <style>
 * {
@@ -17,24 +40,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    min-height: 100vh;<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '29144009308625924');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=29144009308625924&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-    background: radial-gradient(ellipse at 50% 30%, #241035 0%, #100819 45%, #08050e 100%);
+    min-height: 100vh;
+    background: radial-gradient(
+        ellipse at 50% 30%,
+        #241035 0%,
+        #100819 45%,
+        #08050e 100%
+    );
     color: white;
     overflow-x: hidden;
     position: relative;
@@ -44,8 +56,8 @@ src="https://www.facebook.com/tr?id=29144009308625924&ev=PageView&noscript=1"
     position: fixed;
     border: 1px solid rgba(180,100,255,0.12);
     border-radius: 45px;
-    transform: rotate(-12deg);
     pointer-events: none;
+    z-index: 0;
 }
 
 .shape1 {
@@ -53,6 +65,7 @@ src="https://www.facebook.com/tr?id=29144009308625924&ev=PageView&noscript=1"
     height: 230px;
     top: 100px;
     left: 9%;
+    transform: rotate(-12deg);
 }
 
 .shape2 {
@@ -79,28 +92,29 @@ src="https://www.facebook.com/tr?id=29144009308625924&ev=PageView&noscript=1"
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 30px 20px;
+    padding: 40px 20px;
     position: relative;
     z-index: 2;
 }
 
 .logo {
-    width: 190px;
-    height: 190px;
+    width: 175px;
+    height: 175px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 5px solid #b54cff;
-    box-shadow: 0 0 15px #a638ff,
-                0 0 35px #a638ff,
-                inset 0 0 25px #8d2bdb;
-    margin-bottom: 48px;
+    box-shadow:
+        0 0 15px #a638ff,
+        0 0 35px #a638ff,
+        inset 0 0 25px #8d2bdb;
+    margin-bottom: 42px;
     animation: glow 2s infinite alternate;
 }
 
 .logo span {
-    font-size: 105px;
+    font-size: 100px;
     font-weight: 900;
     font-style: italic;
     color: #df9cff;
@@ -121,10 +135,12 @@ h1 {
     font-size: 43px;
     font-weight: 900;
     margin-bottom: 22px;
+    letter-spacing: 2px;
 }
 
 h1 span {
     font-style: italic;
+    color: #d47aff;
 }
 
 .description {
@@ -173,11 +189,16 @@ h1 span {
     box-shadow: 0 0 35px rgba(183,64,255,0.4);
     transition: 0.3s;
     display: inline-block;
+    cursor: pointer;
 }
 
 .join-btn:hover {
     transform: scale(1.04);
     box-shadow: 0 0 50px #b84aff;
+}
+
+.join-btn:active {
+    transform: scale(0.97);
 }
 
 .ads {
@@ -200,16 +221,10 @@ h1 span {
     margin-right: 7px;
 }
 
-.ads a {
-    color: #eee0ff;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 .privacy {
     max-width: 710px;
     margin-top: 38px;
-    color: #74677e;
+    color: #897b92;
     font-size: 12px;
     line-height: 1.9;
 }
@@ -218,7 +233,7 @@ h1 span {
     color: #66566f;
     font-size: 12px;
     letter-spacing: 1px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 @media(max-width:600px) {
@@ -229,7 +244,7 @@ h1 span {
     .logo {
         width: 145px;
         height: 145px;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
     }
 
     .logo span {
@@ -264,12 +279,6 @@ h1 span {
 
 <body>
 
-<!-- META PIXEL NOSCRIPT -->
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1432716458939507&ev=PageView&noscript=1"/>
-</noscript>
-
 <div class="background-shape shape1"></div>
 <div class="background-shape shape2"></div>
 <div class="background-shape shape3"></div>
@@ -288,6 +297,7 @@ src="https://www.facebook.com/tr?id=1432716458939507&ev=PageView&noscript=1"/>
     </p>
 
     <div class="features">
+
         <div class="feature">
             <span>ϟ</span> DAILY POSTS
         </div>
@@ -299,26 +309,31 @@ src="https://www.facebook.com/tr?id=1432716458939507&ev=PageView&noscript=1"/>
         <div class="feature">
             <span>☆</span> EXCLUSIVE CONTENT
         </div>
+
     </div>
 
-<a class="join-btn"
-href="https://t.me/+R1B4hRP8GNRlODVl"
-target="_blank"
-rel="noopener noreferrer"
-onclick="if(typeof fbq==='function'){
-fbq('track','Subscribe');
-fbq('track','Lead');
-fbq('trackCustom','JoinTelegramClick');
-}">
-➤ JOIN TELEGRAM FREE
-</a>
+    <!-- Telegram Join Button -->
+    <a class="join-btn"
+       id="telegramJoin"
+       href="https://t.me/+R1B4hRP8GNRlODVl"
+       target="_blank"
+       rel="noopener noreferrer">
+
+       ➤ JOIN TELEGRAM FREE
+
+    </a>
+
+    <div class="ads">
+        <strong>FREE</strong>
+        Join our official Telegram community today.
+    </div>
 
     <p class="privacy">
         Privacy: This page uses Meta Pixel to measure visits
-        (PageView) and clicks on the Telegram join button
-        (JoinTelegramClick) for advertising analytics.
-        A click event does not confirm a Telegram subscription.
-        Browser and Meta settings may provide tracking controls.
+        and Telegram join-button clicks for advertising analytics.
+        A click does not confirm an actual Telegram subscription.
+        Tracking preferences may be managed through your browser
+        and Meta settings.
     </p>
 
     <div class="footer">
@@ -326,6 +341,31 @@ fbq('trackCustom','JoinTelegramClick');
     </div>
 
 </div>
+
+<!-- Meta Pixel Event Tracking -->
+<script>
+(function () {
+
+    const joinButton = document.getElementById('telegramJoin');
+
+    if (!joinButton) return;
+
+    joinButton.addEventListener('click', function () {
+
+        if (typeof window.fbq === 'function') {
+
+            fbq('track', 'Lead');
+
+            fbq('track', 'Subscribe');
+
+            fbq('trackCustom', 'JoinTelegramClick');
+
+        }
+
+    });
+
+})();
+</script>
 
 </body>
 </html>
