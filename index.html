@@ -1,17 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ARYAN BOSS — Official Telegram Community</title>
+<title>ARYAN BOSS | Official Telegram Channel</title>
+<meta name="theme-color" content="#09091c">
+<meta name="description" content="Join Aryan Boss Official Telegram Community.">
 
-<meta name="description" content="Join ARYAN BOSS official Telegram community. Get daily exclusive content and updates for free.">
-
-<meta name="theme-color" content="#100819">
-
-<!-- Meta Pixel Code -->
+<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -19,349 +16,426 @@ n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '29144009308625924');
+s.parentNode.insertBefore(t,s)}
+(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1900448150934388');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=29144009308625924&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1900448150934388&ev=PageView&noscript=1"/>
+</noscript>
+<!-- END META PIXEL -->
 
 <style>
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
-    background: radial-gradient(
-        ellipse at 50% 30%,
-        #241035 0%,
-        #100819 45%,
-        #08050e 100%
-    );
-    color: white;
-    overflow-x: hidden;
-    position: relative;
+  font-family: Arial, sans-serif;
+  background: #09091c;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-.background-shape {
-    position: fixed;
-    border: 1px solid rgba(180,100,255,0.12);
-    border-radius: 45px;
-    pointer-events: none;
-    z-index: 0;
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  background: #080817;
+  border-bottom: 1px solid #242044;
+  padding: 14px 0;
+  white-space: nowrap;
 }
 
-.shape1 {
-    width: 390px;
-    height: 230px;
-    top: 100px;
-    left: 9%;
-    transform: rotate(-12deg);
+.ticker-track {
+  display: inline-flex;
+  gap: 45px;
+  animation: ticker 22s linear infinite;
+  color: #aeb0d2;
+  font-size: 13px;
+  font-weight: bold;
 }
 
-.shape2 {
-    width: 370px;
-    height: 230px;
-    top: 70px;
-    right: 8%;
-    transform: rotate(-7deg);
+.ticker span {
+  color: #21e5bd;
 }
 
-.shape3 {
-    width: 300px;
-    height: 400px;
-    right: -80px;
-    top: 310px;
-    transform: rotate(25deg);
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
-.container {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px 20px;
-    position: relative;
-    z-index: 2;
+.page {
+  min-height: 100vh;
+  padding: 30px 16px;
+  background:
+    radial-gradient(ellipse at 50% 15%, #34206e 0%, transparent 45%),
+    radial-gradient(ellipse at 10% 90%, #102e4a 0%, transparent 40%),
+    linear-gradient(145deg, #100d2c, #08091b 65%, #111d32);
 }
 
-.logo {
-    width: 175px;
-    height: 175px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #b54cff;
-    box-shadow:
-        0 0 15px #a638ff,
-        0 0 35px #a638ff,
-        inset 0 0 25px #8d2bdb;
-    margin-bottom: 42px;
-    animation: glow 2s infinite alternate;
+.topbar {
+  max-width: 550px;
+  margin: 0 auto 25px;
+  padding: 17px 20px;
+  border: 1px solid #30265e;
+  border-radius: 20px;
+  background: rgba(24, 19, 54, .85);
+  box-shadow: 0 0 25px #7038b522;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.logo span {
-    font-size: 100px;
-    font-weight: 900;
-    font-style: italic;
-    color: #df9cff;
-    text-shadow: 0 0 25px #bb52ff;
+.brand {
+  font-size: 19px;
+  font-weight: 900;
+  color: #c5a5ff;
 }
 
-@keyframes glow {
-    from {
-        box-shadow: 0 0 15px #a638ff, 0 0 25px #a638ff;
-    }
-    to {
-        box-shadow: 0 0 30px #c05aff, 0 0 55px #a638ff;
-    }
+.brand small {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #777caa;
+  margin-top: 5px;
+}
+
+.live {
+  color: #50eaff;
+  border: 1px solid #25bce8;
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  box-shadow: 0 0 15px #19dfff55;
+}
+
+.main-card {
+  max-width: 550px;
+  margin: auto;
+  padding: 42px 28px 55px;
+  border: 1px solid #40327a;
+  border-radius: 36px;
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 15%, #20164b, transparent 35%),
+    linear-gradient(145deg, #100d27, #09091d);
+  box-shadow:
+    0 0 35px #7d39ff25,
+    inset 0 0 30px #492a7b15;
+}
+
+.logo-ring {
+  width: 185px;
+  height: 185px;
+  margin: 0 auto 48px;
+  padding: 7px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #e6b6ff,
+    #36e5ff,
+    #8145ff,
+    #e6b6ff
+  );
+  box-shadow: 0 0 30px #a54dff66;
+  position: relative;
+}
+
+.logo-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, #44205d, #100c25 70%);
+  border: 5px solid #17112e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.crown {
+  font-size: 42px;
+  margin-bottom: 5px;
+}
+
+.logo-inner strong {
+  font-size: 19px;
+  color: white;
+  text-shadow: 0 0 12px #ad70ff;
+}
+
+.logo-inner small {
+  color: #43e7ff;
+  font-size: 9px;
+  letter-spacing: 3px;
+  margin-top: 5px;
+}
+
+.logo-badge {
+  position: absolute;
+  right: -4px;
+  bottom: 4px;
+  width: 43px;
+  height: 43px;
+  background: #5e24ba;
+  border: 3px solid #b98aff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+}
+
+.official {
+  color: #39dfff;
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 h1 {
-    font-family: Georgia, serif;
-    font-size: 43px;
-    font-weight: 900;
-    margin-bottom: 22px;
-    letter-spacing: 2px;
-}
-
-h1 span {
-    font-style: italic;
-    color: #d47aff;
+  font-size: clamp(34px, 8vw, 46px);
+  font-weight: 900;
+  background: linear-gradient(90deg, #d7baff, #ffffff, #39e4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 32px;
 }
 
 .description {
-    color: #aaa0b5;
-    font-size: 17px;
-    line-height: 1.8;
-    max-width: 700px;
-    margin-bottom: 25px;
+  font-size: 19px;
+  line-height: 1.9;
+  color: #d2d0e8;
+  margin-bottom: 35px;
 }
 
-.features {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-bottom: 36px;
+.description strong {
+  color: #39ddff;
+  font-style: italic;
 }
 
-.feature {
-    border: 1px solid #493254;
-    background: rgba(255,255,255,0.04);
-    border-radius: 30px;
-    padding: 11px 17px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #c7b8d3;
+.badges {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 60px;
 }
 
-.feature span {
-    color: #c15aff;
-    margin-right: 7px;
-    font-size: 17px;
+.badge {
+  padding: 13px 18px;
+  border: 1px solid #a65cff;
+  border-radius: 30px;
+  color: #f2ddff;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  box-shadow: 0 0 15px #a14aff44;
+}
+
+.badge.cyan {
+  color: #54eaff;
+  border-color: #27d9f7;
+  box-shadow: 0 0 15px #27d9f744;
 }
 
 .join-btn {
-    width: 100%;
-    max-width: 520px;
-    padding: 23px 15px;
-    border-radius: 50px;
-    text-decoration: none;
-    color: #160a20;
-    font-size: 19px;
-    font-weight: 900;
-    letter-spacing: 1px;
-    background: linear-gradient(100deg, #a83cff, #d47aff);
-    box-shadow: 0 0 35px rgba(183,64,255,0.4);
-    transition: 0.3s;
-    display: inline-block;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  min-height: 90px;
+  margin: 0 auto 20px;
+  padding: 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 23px;
+  font-weight: 900;
+  background: linear-gradient(110deg, #d8b8ff, #9a39ff, #5820a9);
+  border: 2px solid #d4aaff;
+  box-shadow:
+    0 0 20px #a23fff99,
+    0 0 45px #8d39ff66;
+  animation: glow 2s infinite alternate;
+  transition: .3s;
 }
 
 .join-btn:hover {
-    transform: scale(1.04);
-    box-shadow: 0 0 50px #b84aff;
+  transform: scale(1.04);
 }
 
-.join-btn:active {
-    transform: scale(0.97);
+@keyframes glow {
+  from {
+    box-shadow: 0 0 15px #a23fff77;
+  }
+  to {
+    box-shadow: 0 0 35px #a23fff, 0 0 60px #713bff88;
+  }
 }
 
-.ads {
-    margin-top: 35px;
-    width: 100%;
-    max-width: 610px;
-    padding: 17px;
-    border: 1px solid #493254;
-    border-radius: 40px;
-    background: rgba(255,255,255,0.03);
-    color: #aaa0b5;
-    font-size: 14px;
+.telegram-icon {
+  font-size: 28px;
 }
 
-.ads strong {
-    color: #d39aff;
-    background: #321943;
-    padding: 8px 13px;
-    border-radius: 10px;
-    margin-right: 7px;
+.note {
+  color: #8886b2;
+  font-size: 15px;
+  line-height: 2;
+  margin-top: 12px;
 }
 
-.privacy {
-    max-width: 710px;
-    margin-top: 38px;
-    color: #897b92;
-    font-size: 12px;
-    line-height: 1.9;
+.status {
+  color: #9291b9;
+  margin-top: 12px;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.status strong {
+  color: #32e3e8;
 }
 
 .footer {
-    color: #66566f;
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin-top: 20px;
+  max-width: 550px;
+  margin: 28px auto 0;
+  text-align: right;
 }
 
-@media(max-width:600px) {
-    .container {
-        padding: 35px 16px;
-    }
+.footer span {
+  display: inline-block;
+  background: #111126;
+  border: 1px solid #39345d;
+  border-radius: 30px;
+  padding: 12px 17px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 
-    .logo {
-        width: 145px;
-        height: 145px;
-        margin-bottom: 35px;
-    }
+@media(max-width:480px) {
+  .page {
+    padding: 25px 13px;
+  }
 
-    .logo span {
-        font-size: 80px;
-    }
+  .main-card {
+    padding: 40px 20px 48px;
+    border-radius: 32px;
+  }
 
-    h1 {
-        font-size: 34px;
-    }
+  .logo-ring {
+    width: 170px;
+    height: 170px;
+  }
 
-    .description {
-        font-size: 15px;
-    }
+  .description {
+    font-size: 17px;
+  }
 
-    .feature {
-        font-size: 10px;
-        padding: 10px 12px;
-    }
+  .badges {
+    margin-bottom: 48px;
+  }
 
-    .join-btn {
-        font-size: 16px;
-        padding: 21px 10px;
-    }
-
-    .ads {
-        font-size: 12px;
-        line-height: 2.2;
-    }
+  .join-btn {
+    min-height: 80px;
+    font-size: 20px;
+  }
 }
 </style>
 </head>
 
 <body>
 
-<div class="background-shape shape1"></div>
-<div class="background-shape shape2"></div>
-<div class="background-shape shape3"></div>
-
-<div class="container">
-
-    <div class="logo">
-        <span>A</span>
-    </div>
-
-    <h1>ARYAN <span>BOSS</span></h1>
-
-    <p class="description">
-        Join and enjoy with us — daily exclusive content,
-        straight to your Telegram. 100% free, forever.
-    </p>
-
-    <div class="features">
-
-        <div class="feature">
-            <span>ϟ</span> DAILY POSTS
-        </div>
-
-        <div class="feature">
-            <span>♧</span> GROWING COMMUNITY
-        </div>
-
-        <div class="feature">
-            <span>☆</span> EXCLUSIVE CONTENT
-        </div>
-
-    </div>
-
-    <!-- Telegram Join Button -->
-    <a class="join-btn"
-       id="telegramJoin"
-       href="https://t.me/+R1B4hRP8GNRlODVl"
-       target="_blank"
-       rel="noopener noreferrer">
-
-       ➤ JOIN TELEGRAM FREE
-
-    </a>
-
-    <div class="ads">
-        <strong>FREE</strong>
-        Join our official Telegram community today.
-    </div>
-
-    <p class="privacy">
-        Privacy: This page uses Meta Pixel to measure visits
-        and Telegram join-button clicks for advertising analytics.
-        A click does not confirm an actual Telegram subscription.
-        Tracking preferences may be managed through your browser
-        and Meta settings.
-    </p>
-
-    <div class="footer">
-        ARYAN BOSS · OFFICIAL TELEGRAM COMMUNITY
-    </div>
-
+<div class="ticker">
+  <div class="ticker-track">
+    <div>BTC <span>+1.24%</span></div>
+    <div>GOLD <span>+0.87%</span></div>
+    <div>ETH <span>+2.14%</span></div>
+    <div>MARKET <span>LIVE</span></div>
+    <div>BTC <span>+1.24%</span></div>
+    <div>GOLD <span>+0.87%</span></div>
+    <div>ETH <span>+2.14%</span></div>
+    <div>MARKET <span>LIVE</span></div>
+  </div>
 </div>
 
-<!-- Meta Pixel Event Tracking -->
-<script>
-document.addEventListener('DOMContentLoaded', function () {
+<div class="page">
 
-    const joinButton = document.getElementById('telegramJoin');
+  <header class="topbar">
+    <div class="brand">
+      👑 ARYAN BOSS
+      <small>ELITE COMMUNITY</small>
+    </div>
+    <div class="live">● LIVE</div>
+  </header>
 
-    if (!joinButton) return;
+  <main class="main-card">
 
-    joinButton.addEventListener('click', function () {
+    <div class="logo-ring">
+      <div class="logo-inner">
+        <div class="crown">👑</div>
+        <strong>ARYAN BOSS</strong>
+        <small>OFFICIAL</small>
+      </div>
+      <div class="logo-badge">✓</div>
+    </div>
 
-        if (typeof window.fbq === 'function') {
+    <div class="official">
+      ● OFFICIAL TELEGRAM CHANNEL
+    </div>
 
-            fbq('track', 'Lead');
+    <h1>ARYAN BOSS</h1>
 
-            fbq('trackCustom', 'JoinTelegramClick');
+    <p class="description">
+      Welcome to <strong>ARYAN BOSS</strong>
+      official community — daily updates,
+      valuable information and exclusive
+      community content.
+    </p>
 
-        }
+    <div class="badges">
+      <div class="badge">✓ VERIFIED CHANNEL</div>
+      <div class="badge cyan">◉ COMMUNITY FIRST</div>
+    </div>
 
-    });
+    <a
+      href="https://t.me/+R1B4hRP8GNRlODVl"
+      class="join-btn"
+      target="_blank"
+      rel="noopener noreferrer"
+      onclick="if(typeof fbq==='function'){fbq('trackCustom','JoinTelegramClick');}"
+    >
+      <span class="telegram-icon">➤</span>
+      Join Telegram 🚀
+      <span>➜</span>
+    </a>
 
-});
-</script>
+    <div class="note">
+      Free to join &nbsp; · &nbsp; Stay Connected
+      &nbsp; · &nbsp; Leave anytime
+    </div>
+
+    <div class="status">
+      Status: <strong>Ready</strong>
+      · opens in Telegram
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <span>👑 Made By ARYAN BOSS</span>
+  </footer>
+
+</div>
 
 </body>
 </html>
