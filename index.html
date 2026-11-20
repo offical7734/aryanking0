@@ -418,12 +418,10 @@ h1 {
       target="_blank"
       rel="noopener noreferrer"
       onclick="
-        if(typeof fbq === 'function') {
-          fbq('track', 'Lead');
-          fbq('track', 'Subscribe');
-          fbq('trackCustom', 'JoinTelegramClick');
-        }
-      "
+  if(typeof fbq === 'function') {
+    fbq('trackCustom', 'JoinTelegramClick');
+  }
+"
     >
       <span class="telegram-icon">➤</span>
       Join Telegram 🚀
